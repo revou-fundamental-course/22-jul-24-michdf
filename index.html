@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css\styles.css">
     <script src="js\script.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <title>Liburin - Course RevoU</title>
 </head>
 <body>
@@ -25,7 +26,7 @@
                 <img src="https://picsum.photos/200/300" alt="gambar">
                 <p><i><center>"Liburan jadi asik banget bareng Liburin!"</center></i></p>
                 <div class="akun">
-                    <img src="https://picsum.photos/200/300" alt="gambar">
+                    <i class='fas fa-user-circle' style='font-size:48px'></i>
                     <div id="detil-akun">
                         <p>John Doe</p>
                         <p>Traveler</p>
@@ -37,11 +38,12 @@
                 <p>Butuh bantuan? Customer Service kami siap 1x24 jam setelah data kami terima!</p>
                 <form action="_blank">
                     <label for="name"><b>Your Name</b></label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" placeholder="Your First and Last Name">
                     <label for="email"><b>Email Address</b></label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="example@email.com">
                     <label for="destination"><b>Mau Kemana nih?</b></label>
                     <select name="destination" id="destination">
+                        <option value="" disabled selected hidden>Choose Your Destination</option>
                         <option value="bali">Bali</option>
                         <option value="lombok">Lombok</option>
                         <option value="jakarta">Jakarta</option>
