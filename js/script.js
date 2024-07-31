@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(carouselItems[currentIndex]);
     }
 
-    setInterval(showNextItem, 2000); // 10 seconds
+    setInterval(showNextItem, 2000); // 2 seconds
 
     const form = document.getElementById('form');
     const name = document.getElementById('name');
