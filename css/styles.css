@@ -36,6 +36,7 @@ nav a {
     font-weight: bold;
     border: 1px solid #333;
     padding: 0.5rem 1rem;
+    font-family: 'Montserrat';
 }
 nav a:first-child {
     border-top-left-radius: 0.5em;
@@ -51,13 +52,27 @@ main {
     margin: 2rem;
 }
 
-main>p {
+main h1{
+    font-family: 'Travel', sans-serif;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+main h3 {
     margin-bottom: 2.5rem;
+    font-family: 'Montserrat';                              
 }
 
 h1 {
     text-align: center;
     margin-bottom: 1rem;
+    font-family: 'Travel', sans-serif;
+}
+
+h2 {
+    margin-bottom: .5rem;
+    font-family: 'Travel', sans-serif;
+    font-size: 3rem;
 }
 
 /* Booking section */
@@ -105,18 +120,12 @@ section#form h1{
     display: flex;
 }
 
-section#form h1::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid #333;
-    margin-left: 1rem;
-}
-
 .akun {
     display: flex;
     align-items: center;
     margin-top: 1rem;
     margin-left: 3rem;
+    margin-bottom: 1rem;
 }
 
 .akun i {
@@ -134,8 +143,28 @@ form {
 }
 
 form label, form input, form select, form button {
-    margin-bottom: 2rem;
     height: 37.5px;
+    border-radius: .5em;
+}
+
+form input, form select {
+    margin-bottom: 0.5rem;
+}
+
+/* Form validation styles */
+input.invalid, select.invalid {
+    border: 2px solid red;
+}
+
+input.valid, select.valid {
+    border: 2px solid green;
+}
+
+p.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -.5rem;
+    margin-bottom: .5rem;
 }
 
 form button {
@@ -150,6 +179,7 @@ form button {
 form button[type="submit"] {
     background-color: #000000;
     color: white;
+    margin-top: 1em;
 }
 
 /* Benefits section */
@@ -242,6 +272,10 @@ article#break-container {
     margin: 5rem;
 }
 
+#closing p{
+    font-family: 'Montserrat';
+}
+
 #closing button {
     background-color: #dc3545;
     color: white;
@@ -263,6 +297,7 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
+    font-family: 'Montserrat';
 }
 
 footer a {
